@@ -1,0 +1,144 @@
+/* Body style */
+
+/* Header style */
+
+/* Slogan style */
+.hero {
+  background-color: #ddd;
+  padding: 8px 16px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Meniu style */
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+li {
+  display: inline;
+  padding: 8px 16px;
+  margin-right: 4px;
+  border-radius: 4px;
+  border: 1px solid #d2d2d2;
+  background-color: #d3d3d3;
+}
+li a {
+  text-align: center;
+  text-decoration: none;
+}
+li:hover {
+  background-color: #808080;
+  cursor: pointer;
+}
+.show {
+  display: block;
+}
+
+/* Carousel items style */
+.casino-info {
+  width: 300px;
+  /* height: 100%; */
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 8px;
+  border-radius: 15px;
+}
+.casino-logo {
+  height: 200px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rating-star {
+  width: 16px;
+  height: 16px;
+}
+.casino-rating {
+  color: black;
+  padding: 8px 16px;
+  margin: 16px;
+}
+.casino-name {
+  padding: 8px 16px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+}
+.casino-play {
+  padding: 8px;
+  border: 1px solid lightblue;
+  width: 30%;
+  margin: 32px auto;
+  background-color: lightblue;
+  color: blue;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+
+/* Carousel style */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.carousel {
+  position: relative;
+  width: 90%;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.carousel-content {
+  /* position: relative; */
+  overflow: hidden;
+  transition: width 0.4s;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  height: 100%;
+  /* width: 250px; */
+  /* position: absolute; */
+  z-index: 1;
+  transition: left 0.4s cubic-bezier(0.47, 0.13, 0.15, 0.89);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  background-color: rgba(150, 150, 150, 0.3);
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: white;
+  /* -webkit-user-select: none; */
+}
+
+.nav-left {
+  left: -25px;
+}
+
+.nav-right {
+  right: -25px;
+}
+
+.carousel-arrow-icon-left {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.carousel-arrow-icon-right {
+  margin-left: 7px;
+  margin-top: 2px;
+}
