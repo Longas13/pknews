@@ -26,25 +26,25 @@
             </div>
         </div>
 <script>
-// var slideItems = document.querySelectorAll('.slide')
+var slideItems = document.querySelectorAll('.slide')
 
-// function showAll() {
-//     slideItems.forEach(function(element) {
-//         element.classList.add('show')
-//     })
-// }
+function showAll() {
+    slideItems.forEach(function(element) {
+        element.classList.add('show')
+    })
+}
 
-// function showCategory(category) {
-//     gridItems.forEach(function(element){
-//         if (element.classList.contains(category)) {
-//             element.classList.add('show')
-//         }
-//         else {
-//             element.classList.remove('show')
-//         }
-//     })
-// }
-// showAll()
+function showCategory(category) {
+    gridItems.forEach(function(element){
+        if (element.classList.contains(category)) {
+            element.classList.add('show')
+        }
+        else {
+            element.classList.remove('show')
+        }
+    })
+}
+showAll()
 </script>
 
 
@@ -56,7 +56,7 @@
                     <div class="carousel-content" id="casinos">
                         
                         <script>
-function showCasinos() {
+                        function showCasinos() {
                         fetch("https://retoolapi.dev/RrRljN/casinos")
                         .then(function (response) {
                             return response.json();
